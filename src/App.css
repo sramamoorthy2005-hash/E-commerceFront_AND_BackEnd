@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@keyframes fadeInSlideUp {
+    0%{
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.animation-card-up{
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes fadeInSlideDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px) scale(0.98);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.animation-card-down{
+    animation: fadeInSlideDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
